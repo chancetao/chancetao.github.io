@@ -23,20 +23,7 @@
 二	背包问题 01背包问题 问题：有 $N$ 物品和一个容量为 $V$ 的背包。第 $i$ 件物品的重量是 $w_i$ ， 价值是 $v_i$ ，每个物品只有一件。求解将哪些物品装入背包可使价值总和最大。
 定义一个数组 $dp$，$ dp[i][j],\ (1 \le i \le N,\ )$表示前 $i$ 种物品在背包容量为 $j$ 的时候最优解的值。
 对于 $ dp[i][j]$ 来说
- 如果容量 $j$ 小于当前物品的重量，那么就不能选择第 $i$ 个物品了，此时有$dp[i][j] = dp[i-1][j]$； 如果容量 $j$ 大于等于当前物品的重量，那么可以选择第 $i$ 个物品。此时有 $dp[i][j] = max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i])$ ；  得到状态转移方程： $$ dp[i][j] = \begin{cases} dp[i - 1][j], &amp;amp; \text{ j $\lt$ v[i]} \ max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i]) &amp;amp; \text { j $\ge$ v[i]} \end{cases} $$</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>https://chancetao.github.io/posts/about/</link>
-      <pubDate>Wed, 26 May 2021 17:58:21 +0800</pubDate>
-      
-      <guid>https://chancetao.github.io/posts/about/</guid>
-      <description>你好，我叫陶冲，
-chancetao是我常用的代号。 我出生并长大在云南，毕业于成都某末流985，
-现在是一个平平无奇（真平平无奇 的程序员。
-我喜欢的事有很多，电影、摇滚音乐、游戏&amp;hellip;&amp;hellip; 最近喜欢上了骑车，每个周末都去骑行100公里。
-剩下的，想到再写吧</description>
+ 如果容量 $j$ 小于当前物品的重量，那么就不能选择第 $i$ 个物品了，此时有$dp[i][j] = dp[i-1][j]$； 如果容量 $j$ 大于等于当前物品的重量，那么可以选择第 $i$ 个物品。此时有 $dp[i][j] = max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i])$ ；  得到状态转移方程： $$ dp[i][j] = \begin{cases} dp[i - 1][j], &amp;amp; \text{ j $\lt$ v[i]} \\ max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i]) &amp;amp; \text { j $\ge$ v[i]} \end{cases} $$</description>
     </item>
     
   </channel>

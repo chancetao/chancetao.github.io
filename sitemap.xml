@@ -2,10 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chancetao.github.io/categories/</loc>
-  </url><url>
     <loc>https://chancetao.github.io/</loc>
+    <lastmod>2021-06-15T17:58:48+08:00</lastmod>
+  </url><url>
+    <loc>https://chancetao.github.io/posts/</loc>
+    <lastmod>2021-06-15T17:58:48+08:00</lastmod>
   </url><url>
     <loc>https://chancetao.github.io/tags/</loc>
+    <lastmod>2021-06-15T17:58:48+08:00</lastmod>
+  </url><url>
+    <loc>https://chancetao.github.io/posts/dynamic-programming-and-knapsack-problems/</loc>
+    <lastmod>2021-06-15T17:58:48+08:00</lastmod>
+  </url><url>
+    <loc>https://chancetao.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2021-06-15T17:58:48+08:00</lastmod>
+  </url><url>
+    <loc>https://chancetao.github.io/about/</loc>
+    <lastmod>2021-05-26T17:58:21+08:00</lastmod>
+  </url><url>
+    <loc>https://chancetao.github.io/categories/</loc>
   </url>
 </urlset>
