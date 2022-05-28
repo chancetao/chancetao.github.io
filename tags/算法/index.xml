@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on chancetao</title>
+    <link>https://chancetao.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on chancetao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Jun 2021 17:58:48 +0800</lastBuildDate><atom:link href="https://chancetao.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>动态规划与背包问题</title>
+      <link>https://chancetao.github.io/posts/dynamic-programming-and-knapsack-problems/</link>
+      <pubDate>Tue, 15 Jun 2021 17:58:48 +0800</pubDate>
+      
+      <guid>https://chancetao.github.io/posts/dynamic-programming-and-knapsack-problems/</guid>
+      <description>动态规划与背包问题 LeetCode 2021.6.6-2021.6.12 每日一题
+一 动态规划 动态规划（Dynamic Programming，简称DP）是一种通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。通常用来求解最优化问题。
+大致上，若要解一个给定问题，我们需要解其不同部分（即子问题），再根据子问题的解以得出原问题的解。
+一旦某个给定子问题的解已经算出，则将其记忆化存储，以便下次需要同一个子问题解之时直接查表。
+通常按照以下4个步骤来设计一个动态规划算法：
+ 刻画一个最优解的结构特征。 递归地定义最优解的值。 计算最优解的值，通常采用自底向上的方法。 采用计算出的信息构造一个最优解。  如果仅仅需要最优解的值，第4步可以忽略。
+以求解斐波那契数列第 $n$ 项为例，采用递归求解 $Fib(6)$ 时有以下递归调用树：
+而使用动态规划求解同一个问题：
+二	背包问题 01背包问题 问题：有 $N$ 物品和一个容量为 $V$ 的背包。第 $i$ 件物品的重量是 $w_i$ ， 价值是 $v_i$ ，每个物品只有一件。求解将哪些物品装入背包可使价值总和最大。
+定义一个数组 $dp$，$ dp[i][j],\ (1 \le i \le N,\ )$表示前 $i$ 种物品在背包容量为 $j$ 的时候最优解的值。
+对于 $ dp[i][j]$ 来说
+ 如果容量 $j$ 小于当前物品的重量，那么就不能选择第 $i$ 个物品了，此时有$dp[i][j] = dp[i-1][j]$； 如果容量 $j$ 大于等于当前物品的重量，那么可以选择第 $i$ 个物品。此时有 $dp[i][j] = max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i])$ ；  得到状态转移方程： $$ dp[i][j] = \begin{cases} dp[i - 1][j], &amp;amp; \text{ j $\lt$ v[i]} \ max(dp[i - 1][j],\ dp[i - 1][j - v[i]] + v[i]) &amp;amp; \text { j $\ge$ v[i]} \end{cases} $$</description>
+    </item>
+    
+  </channel>
+</rss>
