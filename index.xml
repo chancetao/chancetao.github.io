@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chancetao</title>
-    <link>https://chancetao.github.io/</link>
+    <link>https://chancetao.com/</link>
     <description>Recent content on chancetao</description>
     <generator>Hugo -- gohugo.io</generator>
     
-        <atom:link href="https://chancetao.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chancetao.com/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
