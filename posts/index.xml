@@ -5,7 +5,24 @@
     <link>https://chancetao.com/posts/</link>
     <description>Recent content in Posts on chance tao</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Jun 2021 17:58:48 +0800</lastBuildDate><atom:link href="https://chancetao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 May 2022 13:49:14 +0800</lastBuildDate><atom:link href="https://chancetao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何创建一个博客？</title>
+      <link>https://chancetao.com/posts/how-to-build-a-blog/</link>
+      <pubDate>Tue, 31 May 2022 13:49:14 +0800</pubDate>
+      
+      <guid>https://chancetao.com/posts/how-to-build-a-blog/</guid>
+      <description>最近重新整理了博客，记录一下搭建的过程。
+使用 Hugo 创建站点 参考 Hugo的官方文档，按部就班地创建一个静态网站并且部署到 Github Page。完成之后通过 https://\&amp;lt;name\&amp;gt;.github.io 可以正常访问博客了。
+我使用的 Hugo 主题是 Diary。这个主题优雅又简洁，并且支持了数学公式插入、样式配置和黑暗模式等等功能。
+不过这里先不开始配置。因为很多配置是和域名相关的，所以为了避免后期想要修改域名的时候积重难返，先来配置自定义域名。
+自定义域名 因为国内众所周知的域名 censorship，所以我在 chemicloud 上买了想要的域名。再通过 dnspod 配置好 DNS 解析规则。
+上传 CNAME 到仓库之后等待 DNS 验证成功，就可以通过 https 访问自定义域名了。
+主题配置 接下来参考Diary&amp;rsquo;s wiki 来自定义一些主题配置。
+这里我接入了 disqus 评论和 Google Analysis 分析工具，并且添加了 LaTeX 支持。
+i18n TODO</description>
+    </item>
+    
     <item>
       <title>动态规划与背包问题</title>
       <link>https://chancetao.com/posts/dynamic-programming-and-knapsack-problems/</link>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-  <title>Posts</title>
+  <title>如何创建一个博客？</title>
 
   
   
@@ -113,11 +113,15 @@
   
 
   
-
+  <script src="/js/toc.js"></script>
   
 
   
 
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue-disqus@3/dist/vue-disqus.js"></script>
   
 
   
@@ -207,6 +211,102 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 </div><div id="extraContainer" class="extra-container">
     
     
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-hugo-%e5%88%9b%e5%bb%ba%e7%ab%99%e7%82%b9" onclick="onNavClick(`#使用-hugo-创建站点-nav`)" id="使用-hugo-创建站点-nav">
+									使用 Hugo 创建站点
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e5%9f%9f%e5%90%8d" onclick="onNavClick(`#自定义域名-nav`)" id="自定义域名-nav">
+									自定义域名
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#主题配置-nav`)" id="主题配置-nav">
+									主题配置
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#i18n" onclick="onNavClick(`#i18n-nav`)" id="i18n-nav">
+									i18n
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
@@ -219,8 +319,6 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 dark_mode
             </span>
         </a>
-        
-        
         
         
     </div>
@@ -275,6 +373,102 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 
             
             
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-hugo-%e5%88%9b%e5%bb%ba%e7%ab%99%e7%82%b9" onclick="onNavClick(`#使用-hugo-创建站点-nav`)" id="使用-hugo-创建站点-nav">
+									使用 Hugo 创建站点
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e5%9f%9f%e5%90%8d" onclick="onNavClick(`#自定义域名-nav`)" id="自定义域名-nav">
+									自定义域名
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#主题配置-nav`)" id="主题配置-nav">
+									主题配置
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#i18n" onclick="onNavClick(`#i18n-nav`)" id="i18n-nav">
+									i18n
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
         </div>
     </div>
 </div>
@@ -316,86 +510,111 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 <div id="streamContainer" class="stream-container">
 
     <div class="post-list-container post-list-container-shadow">
-        
-            <a class="a-block">
-                <div class="post-item-wrapper post-item-wrapper-no-hover">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title post-item-title-small year">
-                                2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div class="post">
             
-            <a href="/posts/how-to-build-a-blog/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                如何创建一个博客？
-                            </div>
-                            <div class="post-item-meta">
-    2022-05-31
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
+            
+            
 
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-        
-            <a class="a-block">
-                <div class="post-item-wrapper post-item-wrapper-no-hover">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title post-item-title-small year">
-                                2021
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/posts/dynamic-programming-and-knapsack-problems/" class="a-block">
-                <div class="post-item-wrapper">
-                    <div class="post-item post-item-no-gaps">
-                        <div class="post-item-info-wrapper">
-                            <div class="post-item-title">
-                                动态规划与背包问题
-                            </div>
-                            <div class="post-item-meta">
-    2021-06-15
-    &emsp;
-    
-    
-    
-    &emsp;
-    
-</div>
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    如何创建一个博客？
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-05-31 13:49
+                        </time>
+                        
 
-                        </div>
+                        
+
+                        
+                        
                     </div>
                 </div>
-            </a>
+            </div>
             
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>最近重新整理了博客，记录一下搭建的过程。</p>
+<h2 id="使用-hugo-创建站点">使用 Hugo 创建站点</h2>
+<p>参考 <a href="https://www.gohugo.org/">Hugo的官方文档</a>，按部就班地创建一个静态网站并且部署到 Github Page。完成之后通过 <code>https://\&lt;name\&gt;.github.io</code> 可以正常访问博客了。</p>
+<p>我使用的 Hugo 主题是 <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a>。这个主题优雅又简洁，并且支持了数学公式插入、样式配置和黑暗模式等等功能。</p>
+<p>不过这里先不开始配置。因为很多配置是和域名相关的，所以为了避免后期想要修改域名的时候积重难返，先来配置自定义域名。</p>
+<h2 id="自定义域名">自定义域名</h2>
+<p>因为国内众所周知的域名 censorship，所以我在 <a href="https://chemicloud.com/">chemicloud</a> 上买了想要的域名。再通过 dnspod 配置好 DNS 解析规则。</p>
+<p>上传 CNAME 到仓库之后等待 DNS 验证成功，就可以通过 https 访问自定义域名了。</p>
+<h2 id="主题配置">主题配置</h2>
+<p>接下来参考<a href="https://github.com/AmazingRise/hugo-theme-diary/wiki"> Diary&rsquo;s wiki</a> 来自定义一些主题配置。</p>
+<p>这里我接入了 disqus 评论和 <a href="https://note.qidong.name/2017/07/05/google-analytics-in-hugo/">Google Analysis 分析工具</a>，并且添加了 LaTeX 支持。</p>
+<h2 id="i18n">i18n</h2>
+<p>TODO</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2022-05-31</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+			下回<br>已经到头啦。
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://chancetao.com/posts/dynamic-programming-and-knapsack-problems/">
+			上回<br>动态规划与背包问题
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+<div id="disqus_thread"></div>
+<script>
+    
+
+    var disqus_config = function () {
         
+        this.page.url = 'https:\/\/chancetao.com\/posts\/how-to-build-a-blog\/';  
+        
+        
+        this.page.identifier = 'https:\/\/chancetao.com\/posts\/how-to-build-a-blog\/'; 
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-chancetao-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow"> comments powered by Disqus.  </a> </noscript>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
     </div>
 
 
-
                     </div>
-            </div>
-
-
-<div id="single-column-footer">
+            </div><div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
 <br>
 Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
